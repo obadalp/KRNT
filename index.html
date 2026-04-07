@@ -221,7 +221,7 @@ section { padding: 5rem 1.5rem; }
 .locations { background: var(--blue-dark); color: var(--white); }
 .locations .section-label { color: var(--blue-sky); }
 .locations .section-title { color: var(--white); }
-.locations-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+.locations-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; max-width: 520px; }
 .location-card {
   background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1);
   border-radius: 1rem; padding: 2.5rem; transition: all 0.3s ease;
@@ -309,7 +309,7 @@ footer a:hover { color: rgba(255,255,255,0.8); }
   <ul class="nav-links">
     <li><a href="#story">Náš příběh</a></li>
     <li><a href="#menu">Nabídka</a></li>
-    <li><a href="#locations">Pobočky</a></li>
+    <li><a href="#locations">Kde nás najdete</a></li>
     <li><a href="#reserve">Rezervace</a></li>
   </ul>
 </nav>
@@ -399,16 +399,16 @@ footer a:hover { color: rgba(255,255,255,0.8); }
 <section class="locations" id="locations">
   <div class="container">
     <span class="section-label">Kde nás najdete</span>
-    <h2 class="section-title">Dvě místa, jedna chuť Řecka</h2>
+    <h2 class="section-title">Navštivte naši tavernu</h2>
     <div class="locations-grid">
       <div class="location-card">
         <div class="location-name">
           <svg class="icon" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          Anenská
+          Anenská 4, Brno
         </div>
         <div class="location-detail">
           <svg class="icon" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-          <span>Anenská 22, Brno 602 00</span>
+          <span>Anenská 4, Brno 602 00</span>
         </div>
         <div class="location-detail">
           <svg class="icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -420,30 +420,7 @@ footer a:hover { color: rgba(255,255,255,0.8); }
         </div>
         <div class="location-detail">
           <svg class="icon" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
-          <span>kousekreckanataliri-akce@seznam.cz</span>
-        </div>
-      </div>
-      <div class="location-card new">
-        <span class="new-badge">Nová pobočka</span>
-        <div class="location-name">
-          <svg class="icon" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          Lidická
-        </div>
-        <div class="location-detail">
-          <svg class="icon" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-          <span>Lidická 700/19, Brno 602 00</span>
-        </div>
-        <div class="location-detail">
-          <svg class="icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          <span>Telefon bude doplněn</span>
-        </div>
-        <div class="location-detail">
-          <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          <span>Otevírací doba bude upřesněna</span>
-        </div>
-        <div class="location-detail">
-          <svg class="icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          <span>Už brzy! Sledujte novinky.</span>
+          <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b4dfdbc1c7d1dfc6d1d7dfd5dad5c0d5d8ddc6dd99d5dfd7d1f4c7d1cedad5d99ad7ce">[email&#160;protected]</a></span>
         </div>
       </div>
     </div>
@@ -497,7 +474,7 @@ footer a:hover { color: rgba(255,255,255,0.8); }
       +420 604 168 477
     </a>
     <br>
-    <a href="mailto:kousekreckanataliri-akce@seznam.cz" class="btn btn-gold" style="margin-top:1rem;">
+    <a href="/cdn-cgi/l/email-protection#a1caced4d2c4cad3c4c2cac0cfc0d5c0cdc8d3c88cc0cac2c4e1d2c4dbcfc0cc8fc2db" class="btn btn-gold" style="margin-top:1rem;">
       <svg class="icon" style="width:18px;height:18px;" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
       Napsat e-mail
     </a>
@@ -513,7 +490,7 @@ footer a:hover { color: rgba(255,255,255,0.8); }
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 60));
 
@@ -532,12 +509,4 @@ document.querySelectorAll('.menu-cat').forEach(btn => {
 
 // Scroll animations
 const obs = new IntersectionObserver(entries => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.style.opacity='1'; e.target.style.transform='translateY(0)'; }});
-}, { threshold: 0.12 });
-document.querySelectorAll('.story-grid,.location-card,.service-card').forEach(el => {
-  el.style.opacity='0'; el.style.transform='translateY(30px)';
-  el.style.transition='opacity 0.7s ease, transform 0.7s ease'; obs.observe(el);
-});
-</script>
-</body>
-</html>
+  entries.forEach(e => { if (e.isIntersecting) { e.target.style.opacity='1'; e.target.style.transform='tran
